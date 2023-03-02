@@ -44,8 +44,80 @@ const darkTheme = {
     },
   },
   componentStyleOverrides: {
-    Home: {
-    }
+    App: {
+      root: {
+        background: 'linear-gradient(rgba(22, 28, 36, 0.94), rgba(22, 28, 36, 0.94)) center center / cover no-repeat, url(/images/home/overlay_2.jpg)'
+      }
+    },
+    Navigation: {
+      focus: {
+        backgroundColor: 'rgba(22, 28, 36, 0.8)',
+        '& .tools': {
+          '& .MuiOutlinedInput-notchedOutline': {
+            backgroundColor: 'transparent'
+          },
+          '& .MuiButton-outlined': {
+            backgroundColor: 'transparent'
+          }
+        }
+      },
+      btn: {
+        '&.MuiButton-textPrimary': {
+          color: '#FFFFFF'
+        }
+      }
+    },
+    AccordionMenu: {
+      root: {
+        border: '1px solid rgba(145, 158, 171, 0.16)',
+        boxShadow: 'rgb(0 0 0 / 24%) -40px 40px 80px -8px'
+      }
+    },
+    HomeTechnologySharing: {
+      development: {
+        [breakpoints.up('md')]: {
+          boxShadow: 'rgb(0 0 0 / 40%) -40px 40px 80px',
+        }
+      }
+    },
+    HomeCategory: {
+      content: {
+        borderColor: 'rgba(145, 158, 171, 0.24)'
+      },
+      item: {
+        borderColor: 'rgba(145, 158, 171, 0.24)'
+      }
+    },
+    HomeCategoryList: {
+      item: {
+        color: '#FFFFFF'
+      },
+      button: {
+        color: '#FFFFFF'
+      }
+    },
+    HomeDesigner: {
+      image: {
+        boxShadow: 'rgb(0 0 0) -40px 80px 80px'
+      }
+    },
+    SideSwiper: {
+      prevBtn: {
+        color: '#FFFFFF'
+      },
+      nextBtn: {
+        color: '#FFFFFF'
+      }
+    },
+    SharingCard: {
+      root: {
+        backgroundColor: 'rgb(22, 28, 36)',
+        boxShadow: 'rgb(0 0 0 / 40%) 4px 4px 16px',
+        '&:hover': {
+          boxShadow: 'rgb(0 0 0) 0px 5px 15px'
+        },
+      }
+    },
   },
 }
 

@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import {shallowEqual, useDispatch, useSelector} from "react-redux";
 import { updateThemeSetting, selectThemeSetting } from "containers/App/slice";
-import type { ThemeSettingPresets, ThemeSetting, ThemeSettingMode } from "../types"
 import useDeepCompareEffect from "hooks/effect/useDeepCompareEffect";
 import isEmpty from "lodash/isEmpty";
+import type { ThemeSettingPresets, ThemeSetting, ThemeSettingMode } from "../types"
 
 const useSwitchTheme = () => {
   const dispatch = useDispatch()
