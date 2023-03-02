@@ -9,6 +9,7 @@ import blueTheme from "@/src/theme/blueTheme";
 import redTheme from "@/src/theme/redTheme";
 import darkTheme from "@/src/theme/darkTheme"
 import type { ReactNode } from "react";
+import type { Theme as MuiTheme} from "@mui/material";
 
 interface ThemeProps {
   children: ReactNode
@@ -29,14 +30,14 @@ function Theme({ children }: ThemeProps) {
   const theme = useMemo(() => {
     const themeOptions = createTheme(themePresets[presets])
 
-    return mode === 'dark' ? {
+    return (mode === 'dark' ? {
       ...themeOptions,
       ...darkTheme,
       colorPalette: {
         ...themeOptions.colorPalette,
         ...darkTheme.colorPalette
       },
-    } : themeOptions
+    } : themeOptions) as MuiTheme
   }, [mode, presets])
 
   return (

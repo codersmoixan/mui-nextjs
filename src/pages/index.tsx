@@ -122,7 +122,7 @@ export default function Home() {
 
         <Typography component="p" className={classes.description}>
           Get started by editing{' '}
-          <Typography className={classes.code}>pages/index.js</Typography>
+          <Typography component="code" className={classes.code}>pages/index.js</Typography>
         </Typography>
 
         <div className={classes.grid}>
