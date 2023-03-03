@@ -9,7 +9,6 @@ import useSwitchTheme from "containers/App/hooks/useSwitchTheme";
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
     padding: theme.spacing(0, 4),
-    backgroundColor: theme.colorPalette.background.main
   },
   main: {
     minHeight: '100vh',
