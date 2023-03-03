@@ -1,6 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
 import type { RootState } from "@/src/store";
-import type { EmptyObject } from "@/src/tb.types"
 
 type NotifierState = {
   notifications: any[]

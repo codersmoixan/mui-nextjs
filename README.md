@@ -1,8 +1,14 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## 开始
 
-First, run the development server:
+```bash
+npm install
+# or
+yarn
+```
+
+首先, 开发环境启动项目:
 
 ```bash
 npm run dev
@@ -10,25 +16,28 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+在浏览器打开 [http://localhost:3000](http://localhost:3000) 查看运行结果。
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+您可以通过修改 `pages/index.js` 开始编辑页面。 该页面会在您编辑文件时自动更新。
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+[API 路由](https://nextjs.org/docs/api-routes/introduction) 可以在 [http://localhost:3000/api/hello](http://localhost:3000/api/hello) 上访问 ). 这个端点可以在 pages/api/hello.js 中编辑。
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+`pages/api` 目录映射到 `/api/*`。 此目录中的文件被视为 [API 路由](https://nextjs.org/docs/api-routes/introduction) 而不是 React 页面。
 
-## Learn More
+## 模版集成
+模版集成了`mui 5.0`、`React 18`、`Next.js 13+`、`React-hook-form`、`Redux-toolkit`、`React Query`等。支持暗黑模式，支持主题切换，具体查看 pages/index.tsx。
 
-To learn more about Next.js, take a look at the following resources:
+## 了解更多
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+要了解有关 Next.js 的更多信息，请查看以下资源：
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- [Next.js 官方文档](https://nextjs.org/docs) - 了解 Next.js 功能和 API。
+- [了解 Next.js](https://nextjs.org/learn) - 交互式 Next.js 教程。
 
-## Deploy on Vercel
+您可以查看 [Next.js GitHub 存储库](https://github.com/vercel/next.js/) - 欢迎您提供反馈和贡献！
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 在 Vercel 上部署
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+部署 Next.js 应用程序的最简单方法是使用 [Vercel 平台](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app -readme）来自 Next.js 的创建者。
+
+查看我们的 [Next.js 部署文档](https://nextjs.org/docs/deployment) 了解更多详细信息。
