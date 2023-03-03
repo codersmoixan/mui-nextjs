@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { createTheme, ThemeProvider as MuiThemeProvider } from "@mui/material/styles";
 import useSwitchTheme from "containers/App/hooks/useSwitchTheme";
 import merge from "lodash/merge"
 import defaultTheme from "@/src/theme/defaultTheme";
@@ -24,7 +24,7 @@ const themePresets = {
   six: redTheme
 }
 
-function Theme({ children }: ThemeProps) {
+function ThemeProvider({ children }: ThemeProps) {
   const { presets, mode } = useSwitchTheme()
 
   const theme = useMemo(() => {
@@ -43,8 +43,8 @@ function Theme({ children }: ThemeProps) {
   }, [mode, presets])
 
   return (
-    <ThemeProvider theme={theme}>{children}</ThemeProvider>
+    <MuiThemeProvider theme={theme}>{children}</MuiThemeProvider>
   )
 }
 
-export default Theme
+export default ThemeProvider

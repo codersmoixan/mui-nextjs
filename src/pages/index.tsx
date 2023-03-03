@@ -5,6 +5,8 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography"
 import useSwitchTheme from "containers/App/hooks/useSwitchTheme";
+import useNotifier from "components/Snackbar/hooks/useNotifier";
+import type { VariantType } from "notistack";
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
@@ -94,6 +96,11 @@ const useStyles = makeStyles((theme: Theme) => ({
 export default function Home() {
   const classes = useStyles()
   const { mode, presets, switchMode, switchPresets } = useSwitchTheme()
+  const notify = useNotifier()
+
+  const handleNotify = (variant: VariantType) => {
+    notify('一条测试信息', variant)
+  }
 
   return (
     <div className={classes.root}>
@@ -112,6 +119,11 @@ export default function Home() {
         <Button onClick={() => switchPresets('four')}>blue</Button>
         <Button onClick={() => switchPresets('five')}>orange</Button>
         <Button onClick={() => switchPresets('six')}>red</Button>
+      </Box>
+      <Box mt={4}>
+        <Button onClick={() => handleNotify('success')}>success</Button>
+        <Button onClick={() => handleNotify('warning')}>warning</Button>
+        <Button onClick={() => handleNotify('error')}>error</Button>
       </Box>
 
       <main className={classes.main}>
